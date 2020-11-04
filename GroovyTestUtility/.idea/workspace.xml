@@ -1,21 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39efdf09-863d-40e9-b57e-c33d8257caee" name="Default Changelist" comment="" />
+    <list default="true" id="39efdf09-863d-40e9-b57e-c33d8257caee" name="Default Changelist" comment="Public changed to def">
+      <change afterPath="$PROJECT_DIR$/../GroovyCB/GroovyCB.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sap/gateway/ip/core/customdev/util/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sap/it/api/mapping/MappingContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sap/it/api/mapping/Output.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IdeaProjects.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/untitled.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sap/kr/CommonFunctions.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sap/kr/CommonFunctions.groovy" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1X38qP1C7yVwuhUqS7UyzXyPcJp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GroovyCB" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunManager">
@@ -38,6 +59,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -51,7 +73,15 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Public changed to def" />
+    <option name="LAST_COMMIT_MESSAGE" value="Public changed to def" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="584" y="88" key="CommitChangelistDialog2" timestamp="1604453636805">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="584" y="88" key="CommitChangelistDialog2/1920.0.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1604453636805" />
     <state x="617" y="227" key="FileChooserDialogImpl" timestamp="1601558539089">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -70,10 +100,11 @@
     </state>
     <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1601557638900" />
     <state x="1920" y="0" key="com.intellij.ide.util.TipDialog/1920.0.1280.693/0.0.1920.1040@1920.0.1280.693" timestamp="1597020338249" />
-    <state x="182" y="34" key="new project wizard" timestamp="1601557676688">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state x="970" y="152" key="new project wizard" timestamp="1604453952047">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="182" y="34" key="new project wizard/0.0.1600.860@0.0.1600.860" timestamp="1601557676688" />
+    <state x="970" y="152" key="new project wizard/1920.0.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1604453952047" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

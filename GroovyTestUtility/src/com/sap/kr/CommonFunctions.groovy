@@ -27,7 +27,7 @@ class CommonFunctions {
     //This method splits a string based on character length, expects two input parameters: Source field which needs to be split(textLines)
 //and number of characters after which it has to be split(chunkSize)
 
-    public void splitText(String[] textLines, int[] chunkSize, Output output){
+    def void splitText(String[] textLines, int[] chunkSize, Output output){
 
         for(String textLine: textLines){
 
@@ -59,7 +59,7 @@ class CommonFunctions {
 //This method checks if a value exists in an array, expects two input parameters: Source field (inputValues)
 //and value which needs to be checked in array(checkString)
 
-    public void existsInArray(String[] inputValues, String[] checkString, Output output){
+    def void existsInArray(String[] inputValues, String[] checkString, Output output){
         for(int i=0;i<inputValues.length;i++){
             if(inputValues[i].equals(checkString[0]))
             {
@@ -70,7 +70,7 @@ class CommonFunctions {
         output.addValue(false);
     }
 
-    public void checkQualf(String[] qualf, Output output){
+    def void checkQualf(String[] qualf, Output output){
         for(int i=0;i<qualf.length;i++)
         {
             if(qualf[i].equals("001") || qualf[i].equals("002") || qualf[i].equals("003"))
@@ -84,7 +84,7 @@ class CommonFunctions {
 //expects three input parameters: Search element of the array(inputValues), the value which needs to be checked in array(checkString)
 //and the element from which the output value should be retrieved(outputValue)
 
-    public void getArrayValue(String[] inputValues, String[] checkString, String[] outputValue, Output output){
+    def void getArrayValue(String[] inputValues, String[] checkString, String[] outputValue, Output output){
         for(int i=0;i<inputValues.length;i++){
             if(inputValues[i].equals(checkString[0])){
                 output.addValue(outputValue[i]);
@@ -95,7 +95,7 @@ class CommonFunctions {
 //This method checks whether a string contains a character pattern, expects two input parameters: string (textLine)
 //and character pattern(checkPattern) which needs to be checked in string. Returns true or false
 
-    public void stringContains(String[] textLine, String[] checkPattern, Output output){
+    def void stringContains(String[] textLine, String[] checkPattern, Output output){
 
         for(int i=0;i<textLine.length;i++){
             if(textLine[i].contains(checkPattern[0])){
@@ -157,7 +157,7 @@ class CommonFunctions {
     }
 
 //This method splits a string based on delimiter. Takes two input values: input string and delimiter
-    public void splitStringOnDelimiter(String[] textLines, String[] delimiter, Output output){
+    def void splitStringOnDelimiter(String[] textLines, String[] delimiter, Output output){
         def delimiter_char = delimiter[0];
         for(String textLine: textLines){
             String[] values = textLine.split(delimiter_char);
@@ -168,7 +168,7 @@ class CommonFunctions {
     }
 
 //This method checks format for string and if '*', adds a line break. Takes two input values: tdline and tdformat
-    public void addFormat(String[] tdline, String[] tdformat, Output output){
+    def void addFormat(String[] tdline, String[] tdformat, Output output){
         for(int i=0;i<tdline.length;i++)
         {
             String format = " ";
@@ -184,7 +184,7 @@ class CommonFunctions {
     }
 
 
-    public void concatLines(String[] line, Output output){
+    def void concatLines(String[] line, Output output){
         StringBuffer buf=new StringBuffer();
         for(int i=0; i<line.length; i++){
             buf.append(line[i]);
@@ -192,7 +192,7 @@ class CommonFunctions {
         output.addValue(buf.toString());
     }
 
-    public void removeSUPPRESS(String[] queue, Output output){
+    def void removeSUPPRESS(String[] queue, Output output){
         for(int j=0;j<queue.length;j++)
         {
             if(!output.isSuppress(queue[j]))
@@ -201,7 +201,7 @@ class CommonFunctions {
     }
 
 
-    public void formatByExample(String[] a, String[] b, Output output){
+    def void formatByExample(String[] a, String[] b, Output output){
         int bcount=0;
         for(int i=0;i<a.length; i++){
             if (output.isContextChange[a[i]]){
@@ -234,7 +234,7 @@ class CommonFunctions {
         }
     }
 
-    public void replaceSUPPRESS(String[] queue, Output output){
+    def void replaceSUPPRESS(String[] queue, Output output){
         for(int j=0;j<queue.length;j++)
         {
             if(!output.isSuppress(queue[j]))
@@ -242,7 +242,7 @@ class CommonFunctions {
         }
     }
 
-    public void removeNulls(String[] inputVal, Output output){
+    def void removeNulls(String[] inputVal, Output output){
 
         for(int i=0;i<inputVal.length; i++){
             try{
@@ -267,7 +267,7 @@ class CommonFunctions {
     }
 
 
-    public void addContextChg(String[] queue, Output output){
+    def void addContextChg(String[] queue, Output output){
         for(int j=0;j<queue.length;j++)
         {
             output.addValue(queue[j]);
@@ -277,7 +277,7 @@ class CommonFunctions {
         }
     }
 
-    public void getFirstValue(String[] queue, Output output){
+    def void getFirstValue(String[] queue, Output output){
         try{
             output.addValue(queue[0]);
         }
