@@ -31,27 +31,27 @@ class CommonFunctions {
 
         for(String textLine: textLines){
 
-            int arraySize = (int) Math.ceil(textLine.length() / chunkSize[0]);
+            int arraySize = (int) Math.ceil(textLine.length() / chunkSize[0])
 
-            String[] returnArray = new String[arraySize];
+            String[] returnArray = new String[arraySize]
 
             int index = 0;
             for(int i = 0; i < textLine.length(); i = i+chunkSize[0])
             {
                 if(textLine.length() - i < chunkSize[0])
                 {
-                    returnArray[index++] = textLine.substring(i);
+                    returnArray[index++] = textLine.substring(i)
                 }
                 else
                 {
-                    returnArray[index++] = textLine.substring(i, i+chunkSize[0]);
+                    returnArray[index++] = textLine.substring(i, i+chunkSize[0])
                 }
             }
 
 
             for(String value: returnArray)
             {
-                output.addValue(value);
+                output.addValue(value)
             }
         }
     }
@@ -63,18 +63,18 @@ class CommonFunctions {
         for(int i=0;i<inputValues.length;i++){
             if(inputValues[i].equals(checkString[0]))
             {
-                output.addValue(true);
+                output.addValue(true)
                 break;
             }
         }
-        output.addValue(false);
+        output.addValue(false)
     }
 
     def void checkQualf(String[] qualf, Output output){
         for(int i=0;i<qualf.length;i++)
         {
             if(qualf[i].equals("001") || qualf[i].equals("002") || qualf[i].equals("003"))
-                output.addValue("true");
+                output.addValue("true")
             break;
         }
     }
@@ -87,7 +87,7 @@ class CommonFunctions {
     def void getArrayValue(String[] inputValues, String[] checkString, String[] outputValue, Output output){
         for(int i=0;i<inputValues.length;i++){
             if(inputValues[i].equals(checkString[0])){
-                output.addValue(outputValue[i]);
+                output.addValue(outputValue[i])
                 return;
             }
         }
@@ -99,9 +99,9 @@ class CommonFunctions {
 
         for(int i=0;i<textLine.length;i++){
             if(textLine[i].contains(checkPattern[0])){
-                output.addValue(true);
+                output.addValue(true)
             } else {
-                output.addValue(false);
+                output.addValue(false)
             }
         }
     }
