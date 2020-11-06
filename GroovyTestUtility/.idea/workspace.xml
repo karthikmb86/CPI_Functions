@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39efdf09-863d-40e9-b57e-c33d8257caee" name="Default Changelist" comment="" />
+    <list default="true" id="39efdf09-863d-40e9-b57e-c33d8257caee" name="Default Changelist" comment="Added custom supporting libs">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sap/gateway/ip/core/customdev/util/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sap/gateway/ip/core/customdev/util/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sap/it/api/mapping/MappingContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sap/it/api/mapping/MappingContext.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604626523363</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added custom supporting libs">
+      <created>1604626644081</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604626644081</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -98,10 +109,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Added custom supporting libs" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="584" y="88" key="CommitChangelistDialog2" timestamp="1604626520935">
+    <state x="584" y="88" key="CommitChangelistDialog2" timestamp="1604626738745">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="584" y="88" key="CommitChangelistDialog2/1920.0.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1604626520935" />
+    <state x="584" y="88" key="CommitChangelistDialog2/1920.0.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1604626738745" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1604462381660">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
