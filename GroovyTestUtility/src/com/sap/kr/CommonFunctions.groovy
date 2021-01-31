@@ -1,23 +1,6 @@
-import com.sap.it.api.mapping.*
-import groovy.xml.StreamingMarkupBuilder;
-
-/*Add MappingContext parameter to read or set headers and properties
-def String customFunc1(String P1,String P2,MappingContext context) {
-         String value1 = context.getHeader(P1);
-         String value2 = context.getProperty(P2);
-         return value1+value2;
-}
-
-Add Output parameter to assign the output value.
-def void custFunc2(String[] is,String[] ps, Output output, MappingContext context) {
-        String value1 = context.getHeader(is[0]);
-        String value2 = context.getProperty(ps[0]);
-        output.addValue(value1);
-        output.addValue(value2);
-}*/
-
 import com.sap.gateway.ip.core.customdev.util.Message;
 import java.util.*;
+import java.text.SimpleDateFormat;
 import com.sap.it.api.mapping.*;
 import com.sap.it.api.mapping.MappingContext;
 
@@ -286,12 +269,33 @@ class CommonFunctions {
         }
     }
 
-    static stringXML = '<person>'+
-            '<firstName>John</firstName><lastName>Doe</lastName><age>25</age>'+
-            '</person>'
+    def String padZerosToLeft(String input){
+        try{
+            return String.format('%018d',Integer.parseInt(input));
+        }
+        catch(Exception e){
+            return input;
+       }
+    }
 
-    static main(args) {
+    /*Karthik Bangera*/
 
-        def input = new XmlSlurper().parse(new File("C:/IntellijFiles/Input1.xml"))
+    def String getconvertedTime(String timeVal, String sourceTimeZone, String targetTimeZone, MappingContext context) {
+        SimpleDateFormat FORMATTER = new SimpleDateFormat('yyyyMMddHHmmss');
+        //SimpleDateFormat FORMATTER = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+        FORMATTER.setTimeZone(TimeZone.getTimeZone(sourceTimeZone));
+        //Date date = FORMATTER.parse('2021-02-24 11:00:00');
+        Date date = FORMATTER.parse(timeVal);
+        FORMATTER.setTimeZone(TimeZone.getTimeZone(targetTimeZone));
+
+        return FORMATTER.format(date);
+    }
+
+
+    static void main(String[] args) {
+        String.format('%018d',Integer.parseInt("20"));
+        //padZerosToLeft("20");
+        //def input = new XmlSlurper().parse(new File("C:/IntellijFiles/Input1.xml"))
     }
 }
