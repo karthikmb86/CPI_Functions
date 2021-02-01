@@ -13,6 +13,7 @@ public static void main(String[] args) {
     getconvertedTime(timeVal, sourceTZ, targetTZ, mc);
 }
 
+/* SAP */
     //This method splits a string based on character length, expects two input parameters: Source field which needs to be split(textLines)
 //and number of characters after which it has to be split(chunkSize)
 
@@ -67,7 +68,6 @@ public static void main(String[] args) {
             break;
         }
     }
-
 
 //This method checks if a value exists in an array and if true, returns a corresponding value of any arbitrary element of the array:
 //expects three input parameters: Search element of the array(inputValues), the value which needs to be checked in array(checkString)
@@ -172,6 +172,7 @@ public static void main(String[] args) {
         }
     }
 
+/*Karthik Bangera*/
 
     def void concatLines(String[] line, Output output){
         StringBuffer buf=new StringBuffer();
@@ -188,7 +189,6 @@ public static void main(String[] args) {
                 output.addValue(queue[j]);
         }
     }
-
 
     def void formatByExample(String[] a, String[] b, Output output){
         int bcount=0;
@@ -209,7 +209,6 @@ public static void main(String[] args) {
             }
         }
     }
-
 
     def void ConvertUoMs_UStoNZ(String[] unit, String[] value, Output newVal) {
 
@@ -255,7 +254,6 @@ public static void main(String[] args) {
         }
     }
 
-
     def void addContextChg(String[] queue, Output output){
         for(int j=0;j<queue.length;j++)
         {
@@ -283,8 +281,6 @@ public static void main(String[] args) {
             return input;
        }
     }
-
-    /*Karthik Bangera*/
 
     def String getconvertedTime(String timeVal, String sourceTimeZone, String targetTimeZone, MappingContext context) {
         SimpleDateFormat FORMATTER = new SimpleDateFormat('yyyyMMddHHmmss');
