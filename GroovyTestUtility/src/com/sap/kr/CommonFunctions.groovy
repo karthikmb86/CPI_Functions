@@ -273,13 +273,14 @@ public static void main(String[] args) {
         }
     }
 
+/* Pad zeros to left (Handle long material numbers in the catch block) */
     def String padZerosToLeft(String input){
         try{
             return String.format('%018d',Integer.parseInt(input));
         }
         catch(Exception e){
-            return input;
-       }
+            return "000000000000000000".substring(input.length()) + input
+        }
     }
 
     def String getconvertedTime(String timeVal, String sourceTimeZone, String targetTimeZone, MappingContext context) {
