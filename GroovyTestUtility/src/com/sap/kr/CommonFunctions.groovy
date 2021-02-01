@@ -1,11 +1,17 @@
-import com.sap.gateway.ip.core.customdev.util.Message;
+import com.sap.gateway.ip.core.customdev.util.*;
 import java.util.*;
 import java.text.SimpleDateFormat;
 import com.sap.it.api.mapping.*;
-import com.sap.it.api.mapping.MappingContext;
+import  com.sap.it.api.mapping.MappingContext;
 
+public static void main(String[] args) {
 
-class CommonFunctions {
+    String timeVal = '20210204110000'
+    String sourceTZ = 'UTC'
+    String targetTZ = 'NZ'
+    MappingContext mc = new MappingContext();
+    getconvertedTime(timeVal, sourceTZ, targetTZ, mc);
+}
 
     //This method splits a string based on character length, expects two input parameters: Source field which needs to be split(textLines)
 //and number of characters after which it has to be split(chunkSize)
@@ -293,9 +299,4 @@ class CommonFunctions {
     }
 
 
-    static void main(String[] args) {
-        String.format('%018d',Integer.parseInt("20"));
-        //padZerosToLeft("20");
-        //def input = new XmlSlurper().parse(new File("C:/IntellijFiles/Input1.xml"))
-    }
-}
+
