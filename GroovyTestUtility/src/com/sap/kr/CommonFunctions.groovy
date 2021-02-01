@@ -10,7 +10,7 @@ public static void main(String[] args) {
     String sourceTZ = 'UTC'
     String targetTZ = 'NZ'
     MappingContext mc = new MappingContext();
-    getconvertedTime(timeVal, sourceTZ, targetTZ, mc);
+    getConvertedTime(timeVal, sourceTZ, targetTZ, mc);
 }
 
 /* SAP */
@@ -283,7 +283,7 @@ public static void main(String[] args) {
         }
     }
 
-    def String getconvertedTime(String timeVal, String sourceTimeZone, String targetTimeZone, MappingContext context) {
+    def String getConvertedTime(String timeVal, String sourceTimeZone, String targetTimeZone, MappingContext context) {
         SimpleDateFormat FORMATTER = new SimpleDateFormat('yyyyMMddHHmmss');
         //SimpleDateFormat FORMATTER = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
