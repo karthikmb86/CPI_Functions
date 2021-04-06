@@ -2,8 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/address_manager" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/cloud-s4-sdk-book" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/cpi-groovy-examples" vcs="Git" />
   </component>
 </project>
