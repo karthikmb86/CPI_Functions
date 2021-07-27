@@ -1,6 +1,8 @@
 import com.sap.gateway.ip.core.customdev.util.Message;
 import java.util.HashMap;
-import groovy.xml.XmlUtil;
+import groovy.xml.*;
+import java.util.regex.*;
+import java.io.*;
 
 def Message processData(Message message) {
     //Body 
