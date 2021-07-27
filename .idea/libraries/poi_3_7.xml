@@ -2,8 +2,11 @@
   <library name="poi-3.7">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../Downloads/poi-3.7.jar/poi-3.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Work/JarFiles/CPILibs.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../Work/JarFiles/CPILibs.jar!/" />
+    </SOURCES>
   </library>
 </component>

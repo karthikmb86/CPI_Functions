@@ -27,5 +27,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="poi-3.7" level="project" />
+    <orderEntry type="library" name="groovy-2.5.8" level="application" />
   </component>
 </module>
