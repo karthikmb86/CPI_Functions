@@ -9,8 +9,8 @@ def Message processData(Message message) {
        
        def body = message.getBody(java.io.Reader);
        def root = new XmlSlurper().parse(body);
-       def sessionId = root.result.sessionId;
-       message.setHeader("Authorization", "bearer " + sessionId);
+       def sessionId = root.Body.loginResponse.result.sessionId;
+       message.setHeader("Authorization", "Bearer " + sessionId);   //Bearer should be camel case
        
        //def prop = message.getProperties();
        //originalPayload = prop.get("originalPayload");
