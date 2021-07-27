@@ -1,4 +1,7 @@
-def Message getCredentials( Message message ) {
+import com.sap.gateway.ip.core.customdev.util.Message;
+import java.util.HashMap;
+
+def Message processData(Message message) {
     
     def service = ITApiFactory.getApi(SecureStoreService.class, null)
     def credentials = service.getUserCredential("Credential_Name")
@@ -11,4 +14,5 @@ def Message getCredentials( Message message ) {
             
     message.setProperty("userName", userName)
     message.setProperty("password", password)
+    return message
 }
